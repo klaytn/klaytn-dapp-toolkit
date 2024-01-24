@@ -11,7 +11,7 @@ Whether you're a hackathon participant or an ambitious entrepreneur looking to e
 
 ## Getting started
 ### Docs folder
-Read the [docs](/docs/) in the repository for complete
+Read the [docs](/docs/README.md) in the repository for complete
 
 ### Contracts folder
 Contains many complete smart contract implementations of various DApps
