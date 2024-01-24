@@ -1,12 +1,13 @@
 ![Lone explorer in the dark forest](home-banner.png)
-# Klaytn Dev Sandbox 🧰
+# Klaytn DApp Toolkit 🧰
 
-> Start your web3 journey on Klaytn with a complete toolkit
+> Start your web3 journey on Klaytn with a complete DApp toolkit
 
-**Klaytn Dev Sandbox** takes an unopinionated approach to 
+**Klaytn DApp Toolkit** takes an unopinionated approach to DApp development. Instead of forcing you to adopt our tech stack of choice, we provide you with code snippets that you can use to copy and paste into whichever framework/technical stack that you are using. You can always refer to the original framework documentation for troubleshooting as well as our Troubleshooting section for each component.
 
-The included smart contract templates and front-end sample codes aim to provide you with a
+The included smart contract templates and front-end sample codes aim to provide you with everything you need to run a web product, along with additional tools, documentation, and tricks for building onchain.
 
+Whether you're a hackathon participant or an ambitious entrepreneur looking to establish the next successful project, this toolkit is designed with you in mind.
 
 ## Getting started
 ### Docs folder
