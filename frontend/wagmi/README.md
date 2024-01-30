@@ -13,5 +13,5 @@ Full documentation: [https://wagmi.sh/](https://wagmi.sh/)
 
 ## Klaytn compatible
 Both Wagmi v1 and v2 are compatible with Klaytn so you can check out the sample codes included to know how to create `config` for Wagmi to connect to Klaytn DApps.
-- [Wagmi v1](/wagmi-v1/README.md)
-- [Wagmi v2](/wagmi-v2/README.md)
+- [Wagmi v1](/frontend/wagmi/wagmi-v1/README.md)
+- [Wagmi v2](/frontend/wagmi/wagmi-v2/README.md)
