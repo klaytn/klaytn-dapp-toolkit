@@ -1,0 +1,42 @@
+[
+  {
+    "name": "TAX_RECEIVER",
+    "address": "0xd2128aB4c830ebAaf7804AF231889971a13019F1",
+    "privateKey": "0xdaf16f8acaa115ebe72bf464d8990ca056bf2a5d647439ee368c138e05d1822c"
+  },
+  {
+    "name": "SEED_RECEIVER",
+    "address": "0x0863a657014fE7e1393ef7ED501Dfe9240B406c2",
+    "privateKey": "0x70fce504a5ab9c8c1dbbc902bb3c6442c9bca17a667fed492ba192603c06d81a"
+  },
+  {
+    "name": "PRESALE_RECEIVER",
+    "address": "0x2f1287458984118A94B62405E90AA3e0a8437d9f",
+    "privateKey": "0x76223f63db29ada16c356a5fc6d2824012128c33cf7c6f748a1eb20e19a9cec0"
+  },
+  {
+    "name": "LIQUIDITY_RECEIVER",
+    "address": "0x70c8453a18332C958Dd68C8C79e329866f0Cd8F7",
+    "privateKey": "0x4dd5726413122fbf3cf59e84a716c89794d90221788d00085bdf6fe100bd61ea"
+  },
+  {
+    "name": "CEX_RECEIVER",
+    "address": "0xF3E1ac74D2106C97f72c8639E36a91257dC01d56",
+    "privateKey": "0xb88b29fe9283821c5de07fa7a6d75e924b9d92f99b5bf21e0a0a3e14f13ea1fa"
+  },
+  {
+    "name": "MARKETING_RECEIVER",
+    "address": "0xf088062dE5d45ea7e00b3265b5e30d26573b1110",
+    "privateKey": "0xae6493130c8e29e74edd3945d436b137e482d6c6db96d561ee51a21d8d48daa4"
+  },
+  {
+    "name": "RESEARCH_RECEIVER",
+    "address": "0xeCEf939c9cbe84288289E380935A3129bDDA233e",
+    "privateKey": "0xb186d752303b47b0599d2787bd36ff54c683e718a0366f99b36014eb4a5c174c"
+  },
+  {
+    "name": "STACKING_RECEIVER",
+    "address": "0xCFD5B4Bc8840d3710d2f811C2b037d2cef6F144a",
+    "privateKey": "0xe2686bcf66ac0dd7c3b3257a011ba97750b4401b6ccd23a1b66ffbc739895e79"
+  }
+]
