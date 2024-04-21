@@ -2,8 +2,10 @@
 pragma solidity ^0.8.19;
 
 import "@klaytn/contracts/token/ERC20/IERC20.sol";
+import { VRFConsumerBase } from "@bisonai/orakl-contracts/src/v0.1/VRFConsumerBase.sol";
+import { IVRFCoordinator } from "@bisonai/orakl-contracts/src/v0.1/interfaces/IVRFCoordinator.sol";
 
-contract ContributionSystem {
+contract ContributionSystem is VRFConsumerBase {
     struct Participant {
         uint id;
         uint depositAmount;
@@ -20,18 +22,30 @@ contract ContributionSystem {
     address public tokenAddress; // Added token address
     mapping(address => Participant) public participants;
     address[] public participantList;
+    uint public totalAmount = IERC20(tokenAddress).balanceOf(address(this));
 
     event Deposit(address indexed participant, uint amount);
     event FundsTransferred(address indexed from, address indexed to, uint amount);
     event SegmentEnd(uint segmentNumber);
+    event RandomNumberGenerated(uint256 randomNumber);
 
-    constructor(uint _dayRange, uint _expectedNumber, uint _contributionAmount, address _tokenAddress) {
+    IVRFCoordinator private COORDINATOR;
+    bytes32 private keyHash;
+    uint256 private fee;
+    uint256 public sRandomWord;
+
+    constructor(address coordinator, bytes32 _keyHash, uint256 _fee, uint _dayRange, uint _expectedNumber, uint _contributionAmount, address _tokenAddress) 
+        VRFConsumerBase(coordinator) 
+    {
         host = msg.sender;
         dayRange = _dayRange;
         expectedNumber = _expectedNumber;
         contributionAmount = _contributionAmount;
         tokenAddress = _tokenAddress; // Initialize token address
         currentSegment = 1;
+        COORDINATOR = IVRFCoordinator(coordinator);
+        keyHash = _keyHash;
+        fee = _fee;
     }
 
     modifier onlyHost() {
@@ -67,40 +81,53 @@ contract ContributionSystem {
     }
 
     function distributeFunds() external onlyHost {
-    require(participantList.length == expectedNumber, "Expected number of participants not reached");
-    require(currentSegment <= expectedNumber, "All segments have been completed");
+        require(participantList.length == expectedNumber, "Expected number of participants not reached");
+        require(currentSegment <= expectedNumber, "All segments have been completed");
 
-    uint totalAmount = IERC20(tokenAddress).balanceOf(address(this));
-    
-    // Calculate 2% share for the host
-    uint hostShare = totalAmount * 2 / 100;
-    payable(msg.sender).transfer(hostShare);
-    
-    // Deduct host share from the total amount
-    totalAmount -= hostShare;
+        
+        
+        // Calculate 2% share for the host
+        uint hostShare = totalAmount * 2 / 100;
+        payable(msg.sender).transfer(hostShare);
+        
+        // Deduct host share from the total amount
+        totalAmount -= hostShare;
 
-    // Select a random participant who hasn't received funds yet
-    address randomParticipant = getRandomParticipant();
-    while (participants[randomParticipant].receivedFunds) {
-        randomParticipant = getRandomParticipant();
+        // Request a random number from the VRF Coordinator
+        requestRandomWords(keyHash, 0, 300000, 1);
     }
 
-    // Transfer remaining funds to the random participant
-    require(IERC20(tokenAddress).transfer(randomParticipant, totalAmount), "Token transfer failed");
-    participants[randomParticipant].receivedFunds = true;
-    emit FundsTransferred(address(this), randomParticipant, totalAmount);
-
-    // Increment segment count
-    currentSegment++;
-
-    // If all segments have been completed, reset segment count and emit event
-    if (currentSegment > expectedNumber) {
-        currentSegment = 1;
-        emit SegmentEnd(expectedNumber);
+    function requestRandomWords(
+        bytes32 _keyHash,
+        uint64 _accId,
+        uint32 _callbackGasLimit,
+        uint32 _numWords
+    ) public returns (uint256 requestId) {
+        requestId = COORDINATOR.requestRandomWords(_keyHash, _accId, _callbackGasLimit, _numWords);
     }
-}
 
+    function fulfillRandomWords(uint256 /* requestId */, uint256[] memory _randomWords) internal override {
+        sRandomWord = _randomWords[0];
+        // Select a random participant who hasn't received funds yet
+        address randomParticipant = participantList[sRandomWord % participantList.length];
+        while (participants[randomParticipant].receivedFunds) {
+            randomParticipant = participantList[sRandomWord % participantList.length];
+        }
 
+        // Transfer remaining funds to the random participant
+        require(IERC20(tokenAddress).transfer(randomParticipant, totalAmount), "Token transfer failed");
+        participants[randomParticipant].receivedFunds = true;
+        emit FundsTransferred(address(this), randomParticipant, totalAmount);
+
+        // Increment segment count
+        currentSegment++;
+
+        // If all segments have been completed, reset segment count and emit event
+        if (currentSegment > expectedNumber) {
+            currentSegment = 1;
+            emit SegmentEnd(expectedNumber);
+        }
+    }
 
     function getRandomParticipant() internal view returns (address) {
         uint randIndex = uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty, blockhash(block.number - 1)))) % participantList.length;
@@ -108,7 +135,6 @@ contract ContributionSystem {
     }
 
     function withdraw() external onlyHost {
-        uint totalAmount = IERC20(tokenAddress).balanceOf(address(this));
         require(IERC20(tokenAddress).transfer(host, totalAmount), "Token transfer failed");
     }
 }
