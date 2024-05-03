@@ -26,7 +26,7 @@ const deploy = async () => {
 
 // Use Klaytn custom chain config to verify your contract
 
-// This code is similar to the import statement, check the utils folder.
+// This code is the same as the import statement, check the utils folder.
 
 // const verify = async (contractAddress, args) => {
 //     console.log("Verifying contract....")
