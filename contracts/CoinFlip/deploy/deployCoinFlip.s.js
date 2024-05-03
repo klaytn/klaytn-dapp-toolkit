@@ -1,4 +1,5 @@
-const { ethers, network, run } = require("hardhat");
+const { ethers, network } = require("hardhat");
+const { verify } = require("../utils/verify");
 
 const deploy = async () => {
 
@@ -10,12 +11,12 @@ const deploy = async () => {
     console.log(`Contract Deployed to: ${CoinFlip.target}`)
     console.log(network.config)
 
-    // if (network.config.chainId === 1001 && process.env.KLAYTN_RPC) {
-    //     await CoinFlip.waitForDeployment(6);
-    //     await verify(CoinFlip.target, args)
-    // } else {
-    //     console.log("Contract cannot be verified on Hardhat Network")
-    // }
+    if (network.config.chainId === 1001 && process.env.KLAYTN_RPC) {
+        await CoinFlip.waitForDeployment(6);
+        await verify(CoinFlip.target, args)
+    } else {
+        console.log("Contract cannot be verified on Hardhat Network")
+    }
 
     const sendVal = ethers.parseEther("1");
     const flip = await CoinFlip.flip(0, { value: sendVal });
@@ -24,6 +25,8 @@ const deploy = async () => {
 }
 
 // Use Klaytn custom chain config to verify your contract
+
+// This code is similar to the import statement, check the utils folder.
 
 // const verify = async (contractAddress, args) => {
 //     console.log("Verifying contract....")
