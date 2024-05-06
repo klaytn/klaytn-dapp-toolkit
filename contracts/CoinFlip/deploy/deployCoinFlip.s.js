@@ -3,7 +3,8 @@ const { verify } = require("../utils/verify");
 
 const deploy = async () => {
 
-    const args = ["0x6B4c0b11bd7fE1E9e9a69297347cFDccA416dF5F"]
+    const args = ["0xDA8c0A00A372503aa6EC80f9b29Cc97C454bE499"];
+    const sendVal = ethers.parseEther("1.0");
 
     const CoinFlip = await ethers.deployContract("CoinFlip", args);
     console.log("Deploying contract...");
@@ -18,31 +19,10 @@ const deploy = async () => {
         console.log("Contract cannot be verified on Hardhat Network")
     }
 
-    const sendVal = ethers.parseEther("1");
     const flip = await CoinFlip.flip(0, { value: sendVal });
     await flip.wait(3);
     console.log(`Flipped!`);
 }
-
-// Use Klaytn custom chain config to verify your contract
-
-// This code is the same as the import statement, check the utils folder.
-
-// const verify = async (contractAddress, args) => {
-//     console.log("Verifying contract....")
-//     try {
-//         await run("verify:verify", {
-//             address: contractAddress,
-//             constructorArgs: args
-//         })
-//     } catch (error) {
-//         if (error.message.toLowerCase().includes("already verified")) {
-//             console.log("Already verified...!")
-//         } else {
-//             console.log(error);
-//         }
-//     }
-// }
 
 deploy().catch((error) => {
     console.error(error);

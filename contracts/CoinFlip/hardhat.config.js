@@ -16,7 +16,17 @@ module.exports = {
         }
     },
     etherscan: {
-        apiKey: ETHERSCAN_API_KEY || ""
+        apiKey: ETHERSCAN_API_KEY || "",
+        customChains: [
+            {
+                network: "klaytn",
+                chainId: 1001,
+                urls: {
+                    apiURL: "https://api-baobab.klaytnscope.com/api",
+                    browserURL: "https://baobab.klaytnscope.com",
+                },
+            },
+        ]
     },
     sourcify: {
         enabled: true

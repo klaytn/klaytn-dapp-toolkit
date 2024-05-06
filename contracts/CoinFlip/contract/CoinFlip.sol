@@ -33,8 +33,8 @@ contract CoinFlip is VRFConsumerBase {
     IVRFCoordinator immutable i_vrfCoordinator;
 
     address private vrfAddress;
-    uint64 private s_subscriptionId;
-    uint32 private constant s_gasLane = 100000;
+    address private constant s_refundRecipient = 0x5664eeeE3C63431eF1981f2bDBaB2690ee33f1e8;
+    uint32 private constant s_gasLane = 500000;
     uint32 private constant s_numWords = 1;
     bytes32 private constant s_keyHash =
         0xd9af33106d664a53cb9946df5cd81a30695f5b72224ee64e798b278af812779c;
@@ -50,9 +50,9 @@ contract CoinFlip is VRFConsumerBase {
 
         requestId = i_vrfCoordinator.requestRandomWords(
             s_keyHash,
-            s_subscriptionId,
             s_gasLane,
-            s_numWords
+            s_numWords,
+            s_refundRecipient
         );
 
         s_status[requestId] = CoinFlipStatus(
