@@ -5,7 +5,7 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { ReentrancyGuard } from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract TrustMLM is ReentrancyGuard, ERC721Enumerable {
+contract MultiTierReferralSystem is ReentrancyGuard, ERC721Enumerable {
     IERC20 private tokenUSDC;
 
     // Can set it according wishes up to 10 level
@@ -23,15 +23,15 @@ contract TrustMLM is ReentrancyGuard, ERC721Enumerable {
     ];
     uint256 public lastUplineTokenId;
 
-    mapping(uint256 => uint256) public lineMLM;
+    mapping(uint256 => uint256) public lineTier;
     mapping(uint256 => uint256) public receivedUSDC;
 
     event Registration(uint256 indexed newTokenId, uint256 indexed uplineTokenId, uint256 indexed timestamp);
 
-    constructor(address _addressUSDC, address _defaultUplineAddress) ERC721("Trust MLM", "TMLM") {
+    constructor(address _addressUSDC, address _defaultUplineAddress) ERC721("Multi-Tier Referral System", "MTRS") {
         tokenUSDC = IERC20(_addressUSDC);
         for (uint256 i = shareValue.length; i > 0; i--) {
-            lineMLM[i] = i - 1;
+            lineTier[i] = i - 1;
             _safeMint(_defaultUplineAddress, i);
         }
         lastUplineTokenId = shareValue.length;
@@ -44,7 +44,7 @@ contract TrustMLM is ReentrancyGuard, ERC721Enumerable {
         address who = _msgSender();
 
         uint256 uplineTokenId = _uplineTokenId > lengthShareValue ? _uplineTokenId : lastUplineTokenId;
-        lineMLM[_newTokenId] = uplineTokenId;
+        lineTier[_newTokenId] = uplineTokenId;
 
         uint256 profit;
         uint256 currentUplineTokenId = uplineTokenId;
@@ -52,7 +52,7 @@ contract TrustMLM is ReentrancyGuard, ERC721Enumerable {
             profit = shareValue[i];
             receivedUSDC[currentUplineTokenId] += profit;
             tokenUSDC.transferFrom(who, ownerOf(currentUplineTokenId), profit);
-            currentUplineTokenId = lineMLM[currentUplineTokenId];
+            currentUplineTokenId = lineTier[currentUplineTokenId];
         }
 
         _safeMint(who, _newTokenId);
