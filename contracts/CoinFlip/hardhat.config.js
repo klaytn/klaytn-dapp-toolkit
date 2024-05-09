@@ -16,7 +16,9 @@ module.exports = {
         }
     },
     etherscan: {
-        apiKey: ETHERSCAN_API_KEY || "",
+        apiKey: {
+            klaytn: "unnecessary"
+        },
         customChains: [
             {
                 network: "klaytn",

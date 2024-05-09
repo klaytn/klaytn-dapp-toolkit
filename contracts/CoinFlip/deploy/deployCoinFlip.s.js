@@ -12,16 +12,16 @@ const deploy = async () => {
     console.log(`Contract Deployed to: ${CoinFlip.target}`)
     console.log(network.config)
 
-    if (network.config.chainId === 1001 && process.env.KLAYTN_RPC) {
-        await CoinFlip.waitForDeployment(6);
-        await verify(CoinFlip.target, args)
-    } else {
-        console.log("Contract cannot be verified on Hardhat Network")
-    }
+    // if (network.config.chainId === 1001 && process.env.KLAYTN_RPC) {
+    //     await CoinFlip.waitForDeployment(6);
+    //     await verify(CoinFlip.target, args)
+    // } else {
+    //     console.log("Contract cannot be verified on Hardhat Network")
+    // }
 
-    const flip = await CoinFlip.flip(0, { value: sendVal });
-    await flip.wait(3);
-    console.log(`Flipped!`);
+    // const flip = await CoinFlip.flip(0, { value: sendVal });
+    // await flip.wait(3);
+    // console.log(`Flipped!`);
 }
 
 deploy().catch((error) => {
