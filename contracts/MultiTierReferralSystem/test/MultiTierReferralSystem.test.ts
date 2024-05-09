@@ -84,8 +84,8 @@ describe("Multi-tier Referral system", function () {
           account: account2.account
       });
       expect(await usdc.read.balanceOf([defaultUpline.account.address]))
-      .to.equal((amount + parseUnits("90", decimalUSDC))); // amount + (tokenId 2-10 distribute to defaultUpline Account) -> total 110 USDC
-      expect(await usdc.read.balanceOf([account1.account.address])).to.equal(parseUnits("10", decimalUSDC)); // total 90 USDC
+      .to.equal((amount + parseUnits("90", decimalUSDC))); // amount + (tokenId 2-10 distribute to defaultUpline Account) -> total 190 USDC
+      expect(await usdc.read.balanceOf([account1.account.address])).to.equal(parseUnits("10", decimalUSDC)); // total 10 USDC
     });
   });
 });
