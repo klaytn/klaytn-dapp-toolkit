@@ -1,7 +1,9 @@
 # Klaytn Hacker House
 
-> Funding the next generation of builders on Klaytn
+> Funding the next generation of builders on Klaytn.
 
+> [!NOTE]  
+> Last updated: 2024-05-13. Check back regularly for new bounty tracks or updates.
 ## Introduction
 Hack, Snack, & Swag: The Ultimate Web3 Playground at Klaytn Hacker House
 
@@ -12,6 +14,9 @@ Calling all builders, dreamers, and innovators! Get ready to ignite your Web3 jo
 ### Contribute an approved smart contract
 Contribute an approved smart contract into [contracts library](https://github.com/klaytn/klaytn-dapp-toolkit/tree/main/contracts).
 
+#### Rewards
+- 50 KLAY per `merged` PR/submission
+
 #### Details
 - Proposed smart contract should be approved beforehand
 - Solidity source files, scripts and test cases, a small README.md file explaining use case
@@ -21,4 +26,60 @@ Contribute an approved smart contract into [contracts library](https://github.co
 - Open source
 - Bounty submission should be of good quality (well tested for core functionalities)
 
+---
+
 ### Contribute an approved frontend app/component
+
+Contribute an approved frontend app into [frontend library](https://github.com/klaytn/klaytn-dapp-toolkit/tree/main/frontend).
+
+#### Rewards
+- 50 KLAY per `merged` PR/submission
+
+#### Details
+- Focus on UI/UX. So good handling of transaction lifecycle
+- React (w/ NextJS, Vite) or Vue
+
+#### Submission rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+
+### Contribute a free to use DApp onto Cypress mainnet
+
+Contribute a free to use DApp onto mainnet
+
+#### Rewards
+- 500 KLAY per `merged` PR/submission
+
+#### Details
+- Proposed DApp should be approved beforehand. You can open a proposal as an `issue` in the [Issue tab](https://github.com/klaytn/klaytn-dapp-toolkit/issues)
+- Full implementation that users can use
+- Can be forks of popular DApp on other networks
+
+#### Ideas
+- Airdrop tools
+- NFT mint tools
+- POAP mint tools
+- Community badge mint tools
+- Smart contract factory
+
+#### Submission rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+
+### Contribute to Klaytn Docs
+
+Contribute to Klaytn Docs (https://docs.klaytn.foundation/)
+
+#### Rewards
+- 50 KLAY per `merged` PR/submission
+
+#### Details
+- Each PR request must improve our documentation page (more than just a typo fix) and get merged
+
+#### Rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
