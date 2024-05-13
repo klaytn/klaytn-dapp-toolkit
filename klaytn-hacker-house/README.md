@@ -83,3 +83,8 @@ Contribute to Klaytn Docs (https://docs.klaytn.foundation/)
 #### Rules
 - Open source
 - Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+
+## Support
+If you need help with the bounty program, open a discussion in [Discussion tab](https://github.com/klaytn/klaytn-dapp-toolkit/discussions/categories/q-a)
