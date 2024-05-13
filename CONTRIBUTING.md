@@ -19,9 +19,9 @@ To get an overview of the project, read the [README](../README.md) file. Here ar
 
 ## Getting started
 
-To navigate our codebase with confidence, see [the introduction to working in the docs repository](/contributing/README.md) :confetti_ball:. For more information on how we write our markdown files, see "[Using Markdown and Liquid in GitHub Docs](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs)."
+To navigate our codebase with confidence, see [Getting Started section](./README.md/#getting-started) :confetti_ball:. For more information on how we write our markdown files, see "[Using Markdown and Liquid in GitHub Docs](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs)."
 
-Check to see what [types of contributions](/contributing/types-of-contributions.md) we accept before making changes. Some of them don't even require writing a single line of code :sparkles:.
+Check to see what [types of contributions](./CONTRIBUTING.md/#types-of-contributions) we accept before making changes. Some of them don't even require writing a single line of code :sparkles:.
 
 ### Issues
 
@@ -74,11 +74,11 @@ Once you submit your PR, a Docs team member will review your proposal. We may as
 
 ### Your PR is merged!
 
-Congratulations :tada::tada: The GitHub team thanks you :sparkles:.
+Congratulations :tada::tada: Klaytn Foundation thanks you :sparkles:.
 
-Once your PR is merged, your contributions will be publicly visible on the [GitHub docs](https://docs.github.com/en).
+Once your PR is merged, your contributions will be publicly visible on the [https://github.com/klaytn/klaytn-dapp-toolkit](https://github.com/klaytn/klaytn-dapp-toolkit).
 
-Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](/contributing/types-of-contributions.md).
+Now that you are part of the Klaytn OSS community, see how else you can [contribute to the OSS ecosystem](./CONTRIBUTING.md/#types-of-contributions).
 
 
 ## Types of contributions
