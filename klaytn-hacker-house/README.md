@@ -86,5 +86,66 @@ Contribute to Klaytn Docs (https://docs.klaytn.foundation/)
 
 ---
 
+### Contribute a DApp that leverages Mint Club v2 SDK
+
+Contribute a DApp that leverages Mint Club v2 SDK
+
+#### Rewards 
+- 500 KLAY per `merged` PR/submission
+
+#### Details
+- Based on the Mint Club v2 SDK (https://sdk.mint.club/)
+- Propose an idea beforehand on the github repo issue tab (https://github.com/klaytn/klaytn-dapp-toolkit/issues)
+- Full v0 implementation that users can use. Doesn't have to be completed but core functionalities should be usable.
+- Can be forks
+
+#### Ideas
+- Warpcast frames
+- Coin launchpad
+
+#### Rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+### Contribute an Open Source Developer Tool
+
+#### Rewards
+- 500 KLAY per `merged` PR/submission
+
+#### Details
+- Propose a developer tool beforehand. 
+- Full v0 implementation that users can use. 
+- Doesn't have to be completed but core functionalities should be usable. 
+- Can be forks
+
+#### Ideas
+- Boilerplate
+- Educational framework
+- Smart contract inspector
+- AI solidity code assistant
+
+#### Rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+### Contribute a DApp/App that leverages Klaytn Fee Delegation or Role Based Account feature
+
+Contribute a DApp/App that leverages Klaytn Fee Delegation or Role Based Account feature
+
+#### Rewards
+- 500 KLAY per `merged` PR/submission
+
+#### Details
+- Proposed DApp/App should be approved beforehand.
+- Can be fullstack, backend/smart contract only, frontend only.
+- Bonus for adopting Go or Rust
+
+#### Rules
+- Open source
+- Bounty submission should be of good quality (well tested for core functionalities)
+
+---
 ## Support
 If you need help with the bounty program, open a discussion in [Discussion tab](https://github.com/klaytn/klaytn-dapp-toolkit/discussions/categories/q-a)
