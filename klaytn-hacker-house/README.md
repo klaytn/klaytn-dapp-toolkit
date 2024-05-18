@@ -18,7 +18,7 @@ Contribute an approved smart contract into [contracts library](https://github.co
 - 50 KLAY per `merged` PR/submission
 
 #### Details
-- Proposed smart contract should be approved beforehand
+- Proposed smart contract should be approved beforehand. You can open a proposal as an `issue` in the [Issue tab](https://github.com/klaytn/klaytn-dapp-toolkit/issues)
 - Solidity source files, scripts and test cases, a small README.md file explaining use case
 - Can be adopted in Remix, Hardhat or Foundry frameworks
 
@@ -38,6 +38,7 @@ Contribute an approved frontend app into [frontend library](https://github.com/k
 #### Details
 - Focus on UI/UX. So good handling of transaction lifecycle
 - React (w/ NextJS, Vite) or Vue
+- Proposed frontend should be approved beforehand. You can open a proposal as an `issue` in the [Issue tab](https://github.com/klaytn/klaytn-dapp-toolkit/issues)
 
 #### Submission rules
 - Open source
@@ -138,7 +139,7 @@ Contribute a DApp/App that leverages Klaytn Fee Delegation or Role Based Account
 - 500 KLAY per `merged` PR/submission
 
 #### Details
-- Proposed DApp/App should be approved beforehand.
+- Proposed DApp/App should be approved beforehand. You can open a proposal as an `issue` in the [Issue tab](https://github.com/klaytn/klaytn-dapp-toolkit/issues)
 - Can be fullstack, backend/smart contract only, frontend only.
 - Bonus for adopting Go or Rust
 
