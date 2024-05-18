@@ -10,17 +10,26 @@ The included smart contract templates and front-end sample codes aim to provide 
 Whether you're a hackathon participant or an ambitious entrepreneur looking to establish the next successful project, this toolkit is designed with you in mind.
 
 ## Getting started
-### Docs folder
+### Docs
 Read the [docs](/docs/README.md) in the repository for complete
 
-### Contracts folder
+### Contracts
 Contains many complete smart contract implementations of various DApps
 
-### Frontend folder
+### Frontend
 Contains implementation details of various frontend frameworks for EVM and guide to implement Klaytn specific features with copy/paste code samples
 
 ### Docker
 placeholder
+
+### klaytn-hacker-house
+Contains details of bounty program on Klaytn Ecosystem
+
+### Learn
+Includes various information pieces for the reference
+
+### Workshops
+Contains workshop exercises
 
 ## FAQ
 ### Why copy/paste and not packaged as a container app?
