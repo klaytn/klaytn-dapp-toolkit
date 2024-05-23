@@ -5,7 +5,7 @@ The MultiSig contract has been successfully deployed to the Klaytn Baobab testne
 0xd9909205a2c72a5760616d28ce7c5cb8302e8243
 
 ## View on KlaytnScope
- [Here](https://baobab.klaytnscope.com/account/0x98992f6fD82240C70813C1B4063933c167d4e74F?tabId=internalTx)  View Contract on KlaytnScope
+ [Here](https://baobab.klaytnscope.com/account/0x731DA004351C15d67d6551591dC1926C7B043Ebe?tabId=internalTx)  View Contract on KlaytnScope
 
 ## Constructor Arguments
 Owners:
