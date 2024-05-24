@@ -1,0 +1,25 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel {
+    width: 100%;
+    margin-block: 25px;
+    padding-inline: 15%;
+}
+
+.carousel-inner {
+    height: 60vw;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+@media (min-width: 720px) {
+    .carousel-inner {
+        height: 40vw;
+    }
+}

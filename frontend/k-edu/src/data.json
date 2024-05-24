@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "courseTitle": "Introduction to the Klaytn Ecosystem",
+        "category": "Free",
+        "description": "For those interested in learning about the Klaytn Ecosystem and how to navigate the Klaytn Ecosystem.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 2,
+        "courseTitle": "Advanced Klaytn Development",
+        "category": "Advanced",
+        "description": "An in-depth course on developing applications on the Klaytn platform, including best practices and advanced techniques.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 3,
+        "courseTitle": "Klaytn for Business",
+        "category": "Free",
+        "description": "A comprehensive guide for businesses to leverage the Klaytn ecosystem for their operations, including use cases and case studies.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 4,
+        "courseTitle": "Klaytn Smart Contracts",
+        "category": "Advanced",
+        "description": "Learn how to write, deploy, and manage smart contracts on the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 5,
+        "courseTitle": "Klaytn Ecosystem Tools and Resources",
+        "category": "Free",
+        "description": "Explore the various tools and resources available within the Klaytn ecosystem to enhance your development workflow.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 6,
+        "courseTitle": "Introduction to Blockchain Technology",
+        "category": "Free",
+        "description": "A beginner's guide to understanding the fundamentals of blockchain technology, including key concepts and terminology.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 7,
+        "courseTitle": "Building Decentralized Applications (DApps)",
+        "category": "Advanced",
+        "description": "Step-by-step instructions on building decentralized applications using the Klaytn platform.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 8,
+        "courseTitle": "Klaytn Governance and Consensus Mechanisms",
+        "category": "Free",
+        "description": "Understand the governance model and consensus mechanisms that power the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 9,
+        "courseTitle": "Klaytn Ecosystem Security",
+        "category": "Premium",
+        "description": "Learn about the security aspects of the Klaytn ecosystem, including best practices for securing your applications and data.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 10,
+        "courseTitle": "Klaytn Token Economics",
+        "category": "Free",
+        "description": "An introduction to the economic model of the Klaytn ecosystem, including token distribution, incentives, and more.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 11,
+        "courseTitle": "Klaytn API Integration",
+        "category": "Premium",
+        "description": "Learn how to integrate Klaytn APIs into your applications to enhance functionality and connectivity.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 12,
+        "courseTitle": "Klaytn Ecosystem for Entrepreneurs",
+        "category": "Free",
+        "description": "A guide for entrepreneurs on how to leverage the Klaytn ecosystem to launch and grow their blockchain-based businesses.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 13,
+        "courseTitle": "Klaytn Wallet Development",
+        "category": "Advanced",
+        "description": "Detailed instructions on developing and managing cryptocurrency wallets for the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 14,
+        "courseTitle": "Introduction to DeFi on Klaytn",
+        "category": "Free",
+        "description": "Learn the fundamentals of Decentralized Finance (DeFi) and how to interact with DeFi applications on the Klaytn network.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 15,
+        "courseTitle": "Klaytn Ecosystem Marketing",
+        "category": "Premium",
+        "description": "Strategies and techniques for marketing applications and services within the Klaytn ecosystem effectively.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 16,
+        "courseTitle": "Klaytn Ecosystem Analytics",
+        "category": "Free",
+        "description": "Tools and methods for analyzing data and metrics within the Klaytn ecosystem to make informed decisions.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 17,
+        "courseTitle": "Klaytn Ecosystem Case Studies",
+        "category": "Free",
+        "description": "In-depth case studies of successful projects and applications within the Klaytn ecosystem.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 18,
+        "courseTitle": "Klaytn NFT Development",
+        "category": "Advanced",
+        "description": "A comprehensive guide to developing and launching Non-Fungible Tokens (NFTs) on the Klaytn platform.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 19,
+        "courseTitle": "Klaytn Blockchain Governance",
+        "category": "Free",
+        "description": "Understand the governance structures and decision-making processes that guide the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 20,
+        "courseTitle": "Klaytn Ecosystem Community Building",
+        "category": "Premium",
+        "description": "Learn how to build and grow a vibrant community around your Klaytn-based projects and initiatives.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 21,
+        "courseTitle": "Klaytn Blockchain Fundamentals",
+        "category": "Free",
+        "description": "A foundational course covering the basics of blockchain technology and its implementation on the Klaytn platform.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 22,
+        "courseTitle": "Klaytn Blockchain Compliance",
+        "category": "Premium",
+        "description": "A guide to understanding and navigating the legal and regulatory landscape for projects on the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 23,
+        "courseTitle": "Klaytn for Social Impact",
+        "category": "Free",
+        "description": "Explore how the Klaytn ecosystem can be used for social impact projects, including examples and practical applications.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 24,
+        "courseTitle": "Klaytn Decentralized Identity Solutions",
+        "category": "Advanced",
+        "description": "Learn about decentralized identity solutions and how to implement them on the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    },
+    {
+        "id": 25,
+        "courseTitle": "Klaytn Blockchain Scalability",
+        "category": "Free",
+        "description": "Techniques and strategies for scaling applications and services on the Klaytn blockchain.",
+        "profileImage": "",
+        "href": "/"
+    }
+]

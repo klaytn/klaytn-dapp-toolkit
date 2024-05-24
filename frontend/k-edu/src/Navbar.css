@@ -1,0 +1,21 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: absolute !important;
+    width: 100%;
+    border: solid 1px rgba(97, 76, 76, 0.288);
+}
+
+.navbar-brand {
+    font-weight: bold !important;
+    color: rgb(155, 9, 29);
+}
+
+.navbar-toggler {
+    border-color: rgb(155, 9, 29) !important;
+    outline-color: rgb(155, 9, 29) !important;
+}
