@@ -3,7 +3,7 @@
 > Funding the next generation of builders on Klaytn.
 
 > [!NOTE]  
-> Last updated: 2024-05-16. Check back regularly for new bounty tracks or updates.
+> Last updated: 2024-05-18. Check back regularly for new bounty tracks or updates.
 ## Introduction
 Hack, Snack, & Swag: The Ultimate Web3 Playground at Klaytn Hacker House
 
@@ -101,7 +101,6 @@ Contribute a DApp that leverages Mint Club v2 SDK
 - Can be forks
 
 #### Ideas
-- Warpcast frames
 - Coin launchpad
 
 #### Rules
