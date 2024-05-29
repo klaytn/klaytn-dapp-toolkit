@@ -147,5 +147,20 @@ Contribute a DApp/App that leverages Klaytn Fee Delegation or Role Based Account
 - Bounty submission should be of good quality (well tested for core functionalities)
 
 ---
+### Klaytn Educate Series(KES) 
+
+ Klaytn Educate Series aims to educate you on everything web3 and the Klaytn blockchain. You can register using this [link](https://lu.ma/klaytn-educate-series).
+
+#### Rewards
+- $100 worth of KLAY to be won
+
+#### Things to keep in mind:
+* Listen to the secret code in each session
+* Paste the secret code on the attendance site for each day (Prerequisite Download Kaikas)
+* Qualify for raffle only if you make 80% attendance. 
+* Randomly share $100 worth of KLAY to qualified participants using VRF.
+* Contribute to open source and earn. 
+
+---
 ## Support
 If you need help with the bounty program, open a discussion in [Discussion tab](https://github.com/klaytn/klaytn-dapp-toolkit/discussions/categories/q-a)
