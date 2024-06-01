@@ -1,14 +1,12 @@
-export default function Transactions() {
+export default function Transactions(klayWalletPrivKey, klayWalletAddress) {
   const { ethers } = require("ethers");
 
   const url = "https://public-en-baobab.klaytn.net";
   // const teskKlayUrl = "https://baobab.wallet.klaytn.foundation/faucet";
   const provider = new ethers.providers.JsonRpcProvider(url);
 
-  // const privKey = process.env.REACT_APP_PRIVATE_KEY;
-  const klayWalletPrivKey = process.env.REACT_APP_KLAY_KEY;
-  // const walletAddress = process.env.REACT_APP_ADDRESS;]
-  const klayWalletAddress = process.env.REACT_APP_KLAY_ADDRESS;
+  // const klayWalletPrivKey = process.env.REACT_APP_KLAY_KEY;
+  // const klayWalletAddress = process.env.REACT_APP_KLAY_ADDRESS;
   const signer = new ethers.Wallet(klayWalletPrivKey, provider);
 
   if (!klayWalletPrivKey) {
@@ -18,7 +16,7 @@ export default function Transactions() {
   const getBalance = async () => {
     const balance = await signer.getBalance();
     console.log(`Balance: ${ethers.utils.formatEther(balance)} KLAY`);
-    return balance
+    return balance;
   };
 
   const sendTx = async () => {
