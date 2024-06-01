@@ -115,7 +115,7 @@ export default function Navbar() {
                       <hr className="dropdown-divider"></hr>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/#">
+                      <a className="dropdown-item" href="/advance">
                         Advanced
                       </a>
                     </li>
