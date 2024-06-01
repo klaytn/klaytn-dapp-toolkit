@@ -8,6 +8,6 @@ Add your information to the below list to officially participate in the workshop
 | ----- | ------------ | ------------- | --------------- | ------------ | ----- | ----- |
 | 🧑‍⚖️    | ZxStim       | zxstim        | zxstim          | zxstim       | y     |       |
 | 🧑    | SaitamaCoder | @SaitamaCoder | FucktheKingCode | @codepham    | y     |       |
-| ---   | ---          | ---           | ------          | ---          | ---   | ---   |
+| 🧑    | Ippo         | @IppoCrypto   | NTP-996         | @NTP-996     | y     | ---   |
 
 ⬆️ Submit your registration by adding your information to the table above and open a pull request. After the request is merged, you will get 10 `KLAY` airdrop per day for gas.
