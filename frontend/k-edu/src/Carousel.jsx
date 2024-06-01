@@ -1,21 +1,19 @@
 import React from "react";
-import Mesh from "./assets/mesh.png";
-import KlatyEducate from "./assets/Klaytn_Event.jpg";
 import "./Carousel.css";
 
 export default function Carousel() {
   return (
     <div
       id="carouselExampleDark"
-      class="carousel carousel-dark slide"
+      className="carousel carousel-dark slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleDark"
           data-bs-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -32,46 +30,58 @@ export default function Carousel() {
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src={Mesh} class="d-block w-100" alt="..."></img>
-          <div class="carousel-caption d-none d-md-block">
+      <div className="carousel-inner">
+        <div className="carousel-item active" data-bs-interval="10000">
+          <img
+            src="../assets/mesh.png"
+            className="d-block w-100"
+            alt="..."
+          ></img>
+          <div className="carousel-caption d-none d-md-block">
             <h5>Klaytn</h5>
             <p>Want to learn more about Klaytn?</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src={KlatyEducate} class="d-block w-100" alt="..."></img>
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item" data-bs-interval="2000">
+          <img
+            src="../assets/Klaytn_Event.jpg"
+            className="d-block w-100"
+            alt="..."
+          ></img>
+          <div className="carousel-caption d-none d-md-block">
             <h5>Klaytn Educate Series</h5>
             <p>Want to learn more about the world of Web3?</p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src={Mesh} class="d-block w-100" alt="..."></img>
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item">
+          <img
+            src="../assets/mesh.png"
+            className="d-block w-100"
+            alt="..."
+          ></img>
+          <div className="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleDark"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleDark"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );
