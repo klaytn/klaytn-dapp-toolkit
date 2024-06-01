@@ -16,14 +16,15 @@ import Transactions from "./transaction";
 function App() {
   const [balance, setBalance] = useState(null);
   const [isDisable, setIsDisable] = useState(false);
-  const transactions = Transactions();
+  // const transactions = Transactions();
   const [courseId, setCourseId] = useState(null);
 
-  const fetchBalance = async () => {
+  const fetchBalance = async (privKey, address) => {
     setIsDisable(true);
     console.log(isDisable);
     try {
-      const balance = await transactions.handleBalance();
+      const transaction = await Transactions(privKey, address);
+      const balance = await transaction.handleBalance();
       setBalance(balance);
     } catch (error) {
       console.log(error);
@@ -85,7 +86,7 @@ function App() {
             }
           />
           <Route
-            path="/advanced"
+            path="/advance"
             element={
               <>
                 <AdvanceCourses handleCourseId={handleSetCourseId} />
