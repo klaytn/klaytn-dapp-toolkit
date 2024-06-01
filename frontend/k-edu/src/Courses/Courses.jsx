@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FreeCourses from "./FreeCourses";
 import PaidCourses from "./PaidCourses";
 import AdvanceCourses from "./AdvancedCourses";
 import "./Courses.css";
 
-export default function Courses() {
-  window.addEventListener("load", () => {
+export default function Courses(props) {
+  const { handleCourseId, klayBalance } = props;
+
+  useEffect(() => {
     const categories = document.querySelectorAll(".categories");
     const toggle = document.querySelectorAll(".category");
 
@@ -15,7 +17,7 @@ export default function Courses() {
 
     categories[0].style.display = "block";
     toggle[0].style.color = "rgb(155, 9, 29)";
-  });
+  })
 
   // The function controls the course toggle action
   const toggleCourse = () => {
@@ -28,7 +30,6 @@ export default function Courses() {
         toggles.forEach((toggle) => {
           toggle.style.color = "rgb(34, 32, 32)";
         });
-        console.log("Toggle index: ", index);
         toggle.style.color = "rgb(155, 9, 29)";
         // Switches the category on clicking a toggle
         categories.forEach((category) => {
@@ -56,13 +57,13 @@ export default function Courses() {
             </ul>
           </div>
           <section className="freeCourses categories">
-            <FreeCourses />
+            <FreeCourses handleCourseId={handleCourseId} />
           </section>
           <section className="paidCourses categories">
-            <PaidCourses />
+            <PaidCourses handleCourseId={handleCourseId} klayBalance={klayBalance} />
           </section>
           <section className="AdvancedCourses categories">
-            <AdvanceCourses />
+            <AdvanceCourses handleCourseId={handleCourseId} />
           </section>
         </div>
       </div>
