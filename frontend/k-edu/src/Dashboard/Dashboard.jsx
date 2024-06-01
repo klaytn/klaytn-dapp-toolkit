@@ -24,6 +24,25 @@ export default class Dashboard extends Component {
       });
     }
   }
+
+  handleWalletconnect = () => {
+    let form = document.querySelector(".walletDetailsContainer");
+    const walletKey = document.getElementById("privKey").value;
+    const walletAddress = document.getElementById("address").value;
+    this.state.fetchKlayBalance(walletKey, walletAddress);
+    form.style.display = "none";
+  };
+
+  displayForm = () => {
+    let form = document.querySelector(".walletDetailsContainer");
+    form.style.display = "flex";
+  };
+
+  closeForm = () => {
+    let form = document.querySelector(".walletDetailsContainer");
+    form.style.display = "none";
+  };
+
   render() {
     return (
       <div className="dashboardContainer">
@@ -47,13 +66,27 @@ export default class Dashboard extends Component {
             {!this.state.isDisable && (
               <button
                 className="actionButton"
-                onClick={this.state.fetchKlayBalance}
+                onClick={this.displayForm}
                 disabled={this.state.isDisable}
               >
                 Connect
               </button>
             )}
             <button onClick={Transactions.handleGetKlay}>Buy Klay</button>
+          </div>
+        </div>
+        <div className="walletDetailsContainer">
+          <div className="walletDetails">
+            <span className="closeForm" onClick={this.closeForm}>
+              Close
+            </span>
+            <label htmlFor="privKey">Klaytn Wallet Private Key:</label>
+            <input type="text" id="privKey" name="privKey" />
+            <label htmlFor="address">Klaytn Wallet Address:</label>
+            <input type="text" id="address" name="address" />
+            <button type="submit" onClick={this.handleWalletconnect}>
+              Connect
+            </button>
           </div>
         </div>
       </div>
