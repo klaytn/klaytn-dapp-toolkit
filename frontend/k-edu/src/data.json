@@ -4,199 +4,279 @@
         "courseTitle": "Introduction to the Klaytn Ecosystem",
         "category": "Free",
         "description": "For those interested in learning about the Klaytn Ecosystem and how to navigate the Klaytn Ecosystem.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Jane Doe",
+        "content": "This course covers the fundamentals of the Klaytn ecosystem, including an overview of its architecture, key components, and primary use cases. You will learn how to create a Klaytn wallet, understand the Klaytn governance model, and explore the various tools available for developers.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-01-15"
     },
     {
         "id": 2,
         "courseTitle": "Advanced Klaytn Development",
         "category": "Advanced",
         "description": "An in-depth course on developing applications on the Klaytn platform, including best practices and advanced techniques.",
-        "profileImage": "",
-        "href": "/"
+        "author": "John Smith",
+        "content": "Dive deep into Klaytn development with this advanced course. Topics include setting up a development environment, writing smart contracts, deploying DApps, and optimizing performance. Learn from real-world examples and gain hands-on experience through comprehensive projects.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-02-10"
     },
     {
         "id": 3,
         "courseTitle": "Klaytn for Business",
         "category": "Free",
         "description": "A comprehensive guide for businesses to leverage the Klaytn ecosystem for their operations, including use cases and case studies.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Sarah Lee",
+        "content": "Discover how businesses can harness the power of the Klaytn ecosystem. This course includes case studies of successful business implementations, step-by-step guides on integrating Klaytn solutions, and insights into the economic benefits of blockchain technology for businesses.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-03-05"
     },
     {
         "id": 4,
         "courseTitle": "Klaytn Smart Contracts",
         "category": "Advanced",
         "description": "Learn how to write, deploy, and manage smart contracts on the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "David Kim",
+        "content": "Master the art of creating and managing smart contracts on the Klaytn blockchain. This course covers the lifecycle of a smart contract, from writing and testing to deployment and maintenance. Practical examples and exercises are included to solidify your understanding.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-04-20"
     },
     {
         "id": 5,
         "courseTitle": "Klaytn Ecosystem Tools and Resources",
         "category": "Free",
         "description": "Explore the various tools and resources available within the Klaytn ecosystem to enhance your development workflow.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Emily Zhang",
+        "content": "Enhance your Klaytn development workflow with this comprehensive guide to the ecosystem's tools and resources. Learn about Klaytn IDEs, libraries, SDKs, and APIs, and how they can streamline your development process. Get tips and tricks from experienced developers.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-05-18"
     },
     {
         "id": 6,
         "courseTitle": "Introduction to Blockchain Technology",
         "category": "Free",
         "description": "A beginner's guide to understanding the fundamentals of blockchain technology, including key concepts and terminology.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Michael Brown",
+        "content": "Start your blockchain journey with this beginner-friendly course. Learn the core concepts of blockchain technology, including decentralization, consensus mechanisms, and cryptographic principles. This course provides a solid foundation for further blockchain studies.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-06-22"
     },
     {
         "id": 7,
         "courseTitle": "Building Decentralized Applications (DApps)",
         "category": "Advanced",
         "description": "Step-by-step instructions on building decentralized applications using the Klaytn platform.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Rachel Green",
+        "content": "Create robust and scalable decentralized applications (DApps) on the Klaytn platform. This course offers step-by-step guidance, from initial setup to deployment, covering smart contract integration, user interface design, and security considerations.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-07-19"
     },
     {
         "id": 8,
         "courseTitle": "Klaytn Governance and Consensus Mechanisms",
         "category": "Free",
         "description": "Understand the governance model and consensus mechanisms that power the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "James Taylor",
+        "content": "Gain a deep understanding of Klaytn's governance and consensus mechanisms. Explore how decisions are made within the Klaytn network, the role of validators, and how consensus is achieved through the Istanbul BFT algorithm.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-08-23"
     },
     {
         "id": 9,
         "courseTitle": "Klaytn Ecosystem Security",
         "category": "Premium",
+        "price": 10000,
         "description": "Learn about the security aspects of the Klaytn ecosystem, including best practices for securing your applications and data.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Sophia Martinez",
+        "content": "Security is paramount in blockchain development. This course delves into the security features of the Klaytn ecosystem, covering best practices for securing smart contracts, protecting user data, and mitigating common security threats.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-09-27"
     },
     {
         "id": 10,
         "courseTitle": "Klaytn Token Economics",
         "category": "Free",
         "description": "An introduction to the economic model of the Klaytn ecosystem, including token distribution, incentives, and more.",
-        "profileImage": "",
-        "href": "/"
+        "author": "William Johnson",
+        "content": "Explore the economic underpinnings of the Klaytn ecosystem. This course covers token distribution models, incentive structures, and economic policies designed to ensure the sustainability and growth of the Klaytn network.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-10-30"
     },
     {
         "id": 11,
         "courseTitle": "Klaytn API Integration",
         "category": "Premium",
+        "price": 10000,
         "description": "Learn how to integrate Klaytn APIs into your applications to enhance functionality and connectivity.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Olivia Wilson",
+        "content": "Unlock the full potential of your applications by integrating Klaytn APIs. This course provides detailed instructions on using Klaytn APIs for various purposes, including transaction management, smart contract interaction, and data retrieval.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2023-11-15"
     },
     {
         "id": 12,
         "courseTitle": "Klaytn Ecosystem for Entrepreneurs",
         "category": "Free",
         "description": "A guide for entrepreneurs on how to leverage the Klaytn ecosystem to launch and grow their blockchain-based businesses.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Liam Brown",
+        "content": "Entrepreneurs can benefit immensely from the Klaytn ecosystem. This course covers the steps to launch a blockchain-based business, from ideation and funding to development and scaling. Learn from successful case studies and practical examples.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2023-12-10"
     },
     {
         "id": 13,
         "courseTitle": "Klaytn Wallet Development",
         "category": "Advanced",
         "description": "Detailed instructions on developing and managing cryptocurrency wallets for the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Ava Miller",
+        "content": "Develop secure and user-friendly cryptocurrency wallets for the Klaytn blockchain. This course provides comprehensive instructions on wallet creation, key management, transaction handling, and user interface design.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-01-04"
     },
     {
         "id": 14,
         "courseTitle": "Introduction to DeFi on Klaytn",
         "category": "Free",
         "description": "Learn the fundamentals of Decentralized Finance (DeFi) and how to interact with DeFi applications on the Klaytn network.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Ethan Anderson",
+        "content": "Step into the world of Decentralized Finance (DeFi) with this introductory course. Learn about DeFi principles, popular DeFi applications on Klaytn, and how to engage with DeFi protocols. Practical examples will help you navigate the DeFi landscape.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-02-08"
     },
     {
         "id": 15,
         "courseTitle": "Klaytn Ecosystem Marketing",
         "category": "Premium",
+        "price": 10000,
         "description": "Strategies and techniques for marketing applications and services within the Klaytn ecosystem effectively.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Isabella Davis",
+        "content": "Effective marketing is crucial for the success of blockchain projects. This course offers strategies for promoting your Klaytn-based applications, including digital marketing techniques, community engagement, and leveraging social media platforms.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-03-14"
     },
     {
         "id": 16,
         "courseTitle": "Klaytn Ecosystem Analytics",
         "category": "Free",
         "description": "Tools and methods for analyzing data and metrics within the Klaytn ecosystem to make informed decisions.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Daniel Martinez",
+        "content": "Data-driven decision-making is essential for success in the blockchain world. This course covers the analytical tools and methods available within the Klaytn ecosystem, including data visualization, performance metrics, and user behavior analysis.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-04-17"
     },
     {
         "id": 17,
         "courseTitle": "Klaytn Ecosystem Case Studies",
         "category": "Free",
         "description": "In-depth case studies of successful projects and applications within the Klaytn ecosystem.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Charlotte Garcia",
+        "content": "Learn from the success stories within the Klaytn ecosystem. This course presents detailed case studies of various projects, highlighting their development processes, challenges faced, and strategies that led to their success.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-05-21"
     },
     {
         "id": 18,
         "courseTitle": "Klaytn NFT Development",
         "category": "Advanced",
         "description": "A comprehensive guide to developing and launching Non-Fungible Tokens (NFTs) on the Klaytn platform.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Henry Wilson",
+        "content": "Delve into the world of Non-Fungible Tokens (NFTs) with this advanced course. Learn about NFT standards, creation processes, marketplace integration, and best practices for launching successful NFT projects on Klaytn.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-06-12"
     },
     {
         "id": 19,
         "courseTitle": "Klaytn Blockchain Governance",
         "category": "Free",
         "description": "Understand the governance structures and decision-making processes that guide the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Amelia Lopez",
+        "content": "Explore the governance framework of the Klaytn blockchain. This course explains the roles and responsibilities of different stakeholders, the decision-making processes, and how governance impacts the network's evolution and sustainability.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-07-08"
     },
     {
         "id": 20,
         "courseTitle": "Klaytn Ecosystem Community Building",
         "category": "Premium",
+        "price": 10000,
         "description": "Learn how to build and grow a vibrant community around your Klaytn-based projects and initiatives.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Mason Rodriguez",
+        "content": "Community building is key to the success of blockchain projects. This course offers strategies for fostering engagement, managing community relations, and leveraging social media to build a strong and active community around your Klaytn-based initiatives.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-08-05"
     },
     {
         "id": 21,
         "courseTitle": "Klaytn Blockchain Fundamentals",
         "category": "Free",
         "description": "A foundational course covering the basics of blockchain technology and its implementation on the Klaytn platform.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Mia Hernandez",
+        "content": "Build a solid foundation in blockchain technology with this course. Topics include the principles of blockchain, Klaytn's unique features, and practical exercises to understand the basic operations and functionalities of the Klaytn blockchain.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-09-09"
     },
     {
         "id": 22,
         "courseTitle": "Klaytn Blockchain Compliance",
         "category": "Premium",
+        "price": 10000,
         "description": "A guide to understanding and navigating the legal and regulatory landscape for projects on the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "James Thompson",
+        "content": "Ensure your Klaytn projects comply with relevant laws and regulations. This course covers regulatory requirements, compliance strategies, and risk management practices essential for operating within the legal frameworks applicable to blockchain technology.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-10-01"
     },
     {
         "id": 23,
         "courseTitle": "Klaytn for Social Impact",
         "category": "Free",
         "description": "Explore how the Klaytn ecosystem can be used for social impact projects, including examples and practical applications.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Sophia White",
+        "content": "Harness the power of blockchain for social good. This course explores various social impact projects built on Klaytn, offering insights into their development, execution, and the broader implications for society. Learn how to create impactful projects yourself.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2024-11-14"
     },
     {
         "id": 24,
         "courseTitle": "Klaytn Decentralized Identity Solutions",
         "category": "Advanced",
         "description": "Learn about decentralized identity solutions and how to implement them on the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Benjamin Lewis",
+        "content": "Secure and manage digital identities with Klaytn's decentralized identity solutions. This course covers the principles of decentralized identity, implementation techniques, and practical use cases. Ensure privacy and security in your identity management systems.",
+        "profileImage": "/assets/pic-person-01.jpg",
+        "href": "/",
+        "date": "2024-12-20"
     },
     {
         "id": 25,
         "courseTitle": "Klaytn Blockchain Scalability",
         "category": "Free",
         "description": "Techniques and strategies for scaling applications and services on the Klaytn blockchain.",
-        "profileImage": "",
-        "href": "/"
+        "author": "Emma Walker",
+        "content": "Achieve scalability in your Klaytn-based applications. This course discusses various strategies for scaling, including layer 2 solutions, sharding, and performance optimization techniques. Learn how to handle increased load and ensure efficient operations.",
+        "profileImage": "/assets/pic-person-02.jpg",
+        "href": "/",
+        "date": "2025-01-15"
     }
 ]
