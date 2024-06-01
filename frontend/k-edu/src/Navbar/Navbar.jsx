@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import { Component } from "react";
 import courses from "../data.json";
 import "./Navbar.css";
-import "./Courses/Courses.css";
 
 export default function Navbar() {
   const [searchKeyword, setSearchKeyword] = useState("");
