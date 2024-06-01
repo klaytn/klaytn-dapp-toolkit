@@ -3,7 +3,7 @@
 > Funding the next generation of builders on Klaytn.
 
 > [!NOTE]  
-> Last updated: 2024-05-16. Check back regularly for new bounty tracks or updates.
+> Last updated: 2024-05-18. Check back regularly for new bounty tracks or updates.
 ## Introduction
 Hack, Snack, & Swag: The Ultimate Web3 Playground at Klaytn Hacker House
 
@@ -101,7 +101,6 @@ Contribute a DApp that leverages Mint Club v2 SDK
 - Can be forks
 
 #### Ideas
-- Warpcast frames
 - Coin launchpad
 
 #### Rules
@@ -146,6 +145,21 @@ Contribute a DApp/App that leverages Klaytn Fee Delegation or Role Based Account
 #### Rules
 - Open source
 - Bounty submission should be of good quality (well tested for core functionalities)
+
+---
+### Klaytn Educate Series(KES) 
+
+ Klaytn Educate Series aims to educate you on everything web3 and the Klaytn blockchain. You can register using this [link](https://lu.ma/klaytn-educate-series).
+
+#### Rewards
+- $100 worth of KLAY to be won
+
+#### Things to keep in mind:
+* Listen to the secret code in each session
+* Paste the secret code on the attendance site for each day (Prerequisite Download Kaikas)
+* Qualify for raffle only if you make 80% attendance. 
+* Randomly share $100 worth of KLAY to qualified participants using VRF.
+* Contribute to open source and earn. 
 
 ---
 ## Support
