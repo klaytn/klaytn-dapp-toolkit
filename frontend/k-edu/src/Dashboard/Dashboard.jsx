@@ -9,18 +9,18 @@ export default class Dashboard extends Component {
     this.state = {
       klayBalance: props.klayBalance,
       fetchKlayBalance: props.getBalance,
-      isDisabled: props.isDisabled,
+      isDisable: props.isDisable,
     };
   }
 
   componentDidUpdate(prevProps) {
     if (
       prevProps.klayBalance !== this.props.klayBalance ||
-      prevProps.isDisabled !== this.props.isDisabled
+      prevProps.isDisable !== this.props.isDisable
     ) {
       this.setState({
         klayBalance: this.props.klayBalance,
-        isDisabled: this.props.isDisabled,
+        isDisable: this.props.isDisable,
       });
     }
   }
@@ -46,7 +46,7 @@ export default class Dashboard extends Component {
           <div className="actions">
             <button
               onClick={this.state.fetchKlayBalance}
-              disabled={this.state.isDisabled}
+              disabled={this.state.isDisable}
             >
               Connect
             </button>
