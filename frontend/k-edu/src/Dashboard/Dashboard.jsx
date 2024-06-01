@@ -16,7 +16,7 @@ export default class Dashboard extends Component {
   componentDidUpdate(prevProps) {
     if (
       prevProps.klayBalance !== this.props.klayBalance ||
-      prevProps.isDisable !== this.props.isDisable
+      prevProps.isDisable !== this.props.isDisable // Corrected typo here
     ) {
       this.setState({
         klayBalance: this.props.klayBalance,
@@ -44,12 +44,15 @@ export default class Dashboard extends Component {
             </div>
           </div>
           <div className="actions">
-            <button
-              onClick={this.state.fetchKlayBalance}
-              disabled={this.state.isDisable}
-            >
-              Connect
-            </button>
+            {!this.state.isDisable && (
+              <button
+                className="actionButton"
+                onClick={this.state.fetchKlayBalance}
+                disabled={this.state.isDisable}
+              >
+                Connect
+              </button>
+            )}
             <button onClick={Transactions.handleGetKlay}>Buy Klay</button>
           </div>
         </div>
