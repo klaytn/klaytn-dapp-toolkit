@@ -19,8 +19,14 @@ export default class PaidCourses extends Component {
 
   veryify = (courseFee, klayBalance, page) => {
     if (courseFee < klayBalance) {
-      window.alert("Course Purchased Successfully");
-      window.location.href = page;
+      if (window.confirm(`The price of the course is ${courseFee}`)) {
+        const newBalance = this.state.klayBalance - courseFee;
+        this.setState({ klayBalance: newBalance });
+        window.alert("Course Purchased Successfully");
+        window.location.href = page;
+      } else {
+        window.alert("Purchase Cancelled");
+      }
     } else {
       window.alert("Insufficient Balance");
     }
