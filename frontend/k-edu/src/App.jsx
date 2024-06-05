@@ -28,7 +28,8 @@ function App() {
       setBalance(balance);
     } catch (error) {
       console.log(error);
-      setIsDisable(false)
+      window.alert(error);
+      setIsDisable(false);
     } finally {
       console.log(isDisable);
     }
