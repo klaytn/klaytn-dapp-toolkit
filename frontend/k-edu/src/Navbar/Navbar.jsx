@@ -26,7 +26,7 @@ export default function Navbar() {
         console.log("Screen Width: ", screenHeight);
         if (scrollTopPosition >= lastScrollTop) {
           setTimeout(() => {
-            navBarContainer.style.transform = "translateY(-70px)";
+            navBarContainer.style.transform = "translateY(-400px)";
           }, 1);
         } else {
           setTimeout(() => {
