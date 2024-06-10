@@ -38,10 +38,13 @@
 
 .categories {
   width: 100%;
+  position: relative;
 }
 
 .row {
-  width: 100%;
+  width: 100% !important;
+  position: relative !important;
+  margin-inline: auto;
 }
 
 .row a {

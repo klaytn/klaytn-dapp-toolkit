@@ -18,8 +18,13 @@ export default class PaidCourses extends Component {
   }
 
   veryify = (courseFee, klayBalance, page) => {
+    Event.preventDefault();
     if (courseFee < klayBalance) {
-      if (window.confirm(`The price of the course is ${courseFee}`)) {
+      if (
+        window.confirm(
+          `The price of the course is ${courseFee}. Would you like to proceed with the Purchase?`
+        )
+      ) {
         const newBalance = this.state.klayBalance - courseFee;
         this.setState({ klayBalance: newBalance });
         window.alert("Course Purchased Successfully");
@@ -61,7 +66,7 @@ export default class PaidCourses extends Component {
                       Check it out
                     </button>
                     <span className="premiumCategoryTag">
-                      {course["category"]}
+                      {course["price"]}
                     </span>
                   </div>
                 </div>
