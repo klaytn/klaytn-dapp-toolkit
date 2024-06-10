@@ -41,8 +41,8 @@
 }
 
 .coursePage {
-  margin-top: 50px;
-  padding-left: 25px;
+  margin-block: 50px;
+  /* padding-left: 25px; */
 }
 
 .row {
