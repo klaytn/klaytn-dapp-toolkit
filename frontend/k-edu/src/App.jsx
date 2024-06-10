@@ -65,13 +65,19 @@ function App() {
           />
           <Route
             path="/course/:id"
-            element={<CoursePage courseId={courseId} />}
+            element={
+              <>
+                <CoursePage courseId={courseId} />
+                <Footer />
+              </>
+            }
           />
           <Route
             path="/free"
             element={
               <>
                 <FreeCourses handleCourseId={handleSetCourseId} />
+                <Footer />
               </>
             }
           />
@@ -83,6 +89,7 @@ function App() {
                   handleCourseId={handleSetCourseId}
                   klayBalance={balance}
                 />
+                <Footer />
               </>
             }
           />
@@ -91,6 +98,7 @@ function App() {
             element={
               <>
                 <AdvanceCourses handleCourseId={handleSetCourseId} />
+                <Footer />
               </>
             }
           />
