@@ -25,8 +25,9 @@
 .dashboard img {
     position: absolute;
     /* height: 20vw; */
-    width: 70vw;
+    width: 50vw;
     bottom: 0;
+    left: 0;
     z-index: 0;
 }
 
