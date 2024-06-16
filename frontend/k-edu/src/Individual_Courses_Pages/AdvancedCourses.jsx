@@ -5,6 +5,7 @@ import "./Courses.css";
 export default function AdvanceCourses({ handleCourseId }) {
   return (
     <div className="row row-cols-1 row-cols-md-3 g-4 coursePage">
+      <h1>Advanced Courses</h1>
       {Data.map((course) => {
         return course["category"] === "Advanced" ? (
           <div className="col" id={course["id"]} key={course["id"]}>

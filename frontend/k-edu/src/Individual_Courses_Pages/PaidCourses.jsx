@@ -39,6 +39,7 @@ export default class PaidCourses extends Component {
   render() {
     return (
       <div className="row row-cols-1 row-cols-md-3 g-4 coursePage">
+        <h1>Paid Courses</h1>
         {Data.map((course) => {
           return course["category"] === "Premium" ? (
             <div className="col" id={course["id"]} key={course["id"]}>
