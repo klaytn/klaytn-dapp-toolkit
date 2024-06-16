@@ -38,42 +38,44 @@ export default class PaidCourses extends Component {
 
   render() {
     return (
-      <div className="row row-cols-1 row-cols-md-3 g-4 coursePage">
+      <div>
         <h1>Paid Courses</h1>
-        {Data.map((course) => {
-          return course["category"] === "Premium" ? (
-            <div className="col" id={course["id"]} key={course["id"]}>
-              <div className="card h-100">
-                <img
-                  src="../assets/mesh.png"
-                  className="card-img-top"
-                  alt="..."
-                ></img>
-                <div className="card-body">
-                  <h5 className="card-title">{course["courseTitle"]}</h5>
-                  <p className="card-text">{course["description"]}</p>
-                  <div className="cta">
-                    <button
-                      className="btn btn-primary"
-                      onClick={() =>
-                        this.veryify(
-                          course["price"],
-                          this.state.klayBalance,
-                          `/course/${course["id"]}`
-                        )
-                      }
-                    >
-                      Check it out
-                    </button>
-                    <span className="premiumCategoryTag">
-                      {course["price"]}
-                    </span>
+        <div className="row row-cols-1 row-cols-md-3 g-4 coursePage">
+          {Data.map((course) => {
+            return course["category"] === "Premium" ? (
+              <div className="col" id={course["id"]} key={course["id"]}>
+                <div className="card h-100">
+                  <img
+                    src="../assets/mesh.png"
+                    className="card-img-top"
+                    alt="..."
+                  ></img>
+                  <div className="card-body">
+                    <h5 className="card-title">{course["courseTitle"]}</h5>
+                    <p className="card-text">{course["description"]}</p>
+                    <div className="cta">
+                      <button
+                        className="btn btn-primary"
+                        onClick={() =>
+                          this.veryify(
+                            course["price"],
+                            this.state.klayBalance,
+                            `/course/${course["id"]}`
+                          )
+                        }
+                      >
+                        Check it out
+                      </button>
+                      <span className="premiumCategoryTag">
+                        {course["price"]}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ) : null;
-        })}
+            ) : null;
+          })}
+        </div>
       </div>
     );
   }
