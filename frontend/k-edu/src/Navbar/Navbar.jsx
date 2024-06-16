@@ -89,7 +89,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://klaytn.foundation/">
+                  <a className="nav-link" href="https://klaytn.foundation/" target="_blank" rel="noreferrer">
                     Klaytn
                   </a>
                 </li>
