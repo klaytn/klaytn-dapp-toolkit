@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/free"
+            path="/courses/free"
             element={
               <>
                 <FreeCourses handleCourseId={handleSetCourseId} />
@@ -82,7 +82,7 @@ function App() {
             }
           />
           <Route
-            path="/paid"
+            path="/courses/paid"
             element={
               <>
                 <PaidCourses
@@ -93,7 +93,7 @@ function App() {
             }
           />
           <Route
-            path="/advanced"
+            path="/courses/advanced"
             element={
               <>
                 <AdvanceCourses handleCourseId={handleSetCourseId} />
