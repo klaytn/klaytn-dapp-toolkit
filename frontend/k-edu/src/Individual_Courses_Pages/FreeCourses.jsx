@@ -4,9 +4,9 @@ import "./Courses.css";
 
 export default function FreeCourses({ handleCourseId }) {
   return (
-    <div>
+    <div className="coursePage">
       <h1>Free Courses</h1>
-      <div className="row row-cols-1 row-cols-md-3 g-4 coursePage">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
         {Data.map((course) => {
           return course["category"] === "Free" ? (
             <div className="col" id={course["id"]} key={course["id"]}>

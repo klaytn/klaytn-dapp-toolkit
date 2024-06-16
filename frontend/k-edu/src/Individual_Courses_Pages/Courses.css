@@ -41,8 +41,12 @@
 }
 
 .coursePage {
-  margin-block: 50px;
-  /* padding-left: 25px; */
+  padding-inline: 15px;
+  padding-block: calc(70px + 1vmin);
+}
+
+.coursePage h1 {
+  margin-bottom: 15px;
 }
 
 .row {
@@ -86,4 +90,3 @@
   color: rgb(43, 39, 39);
   border-radius: 5px;
 }
-
