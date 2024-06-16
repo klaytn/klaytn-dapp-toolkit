@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import Intro from "./frontend/intro";
 import SetUp from "./frontend/setUp";
 import Basic from "./frontend/basic";
@@ -7,7 +6,6 @@ import Advanced from "./frontend/advanced";
 import FundMe from "./frontend/fundMe";
 import Practice from "./frontend/practice";
 import FinalTest from "./frontend/finalTest";
-import Footer from "../Footer/Footer";
 import "./bootcamp.css";
 
 export default function Frontend() {
