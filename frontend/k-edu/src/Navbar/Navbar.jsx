@@ -105,12 +105,12 @@ export default function Navbar() {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="/free">
+                      <a className="dropdown-item" href="/courses/free">
                         Free
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/paid">
+                      <a className="dropdown-item" href="/courses/paid">
                         Paid
                       </a>
                     </li>
@@ -118,7 +118,7 @@ export default function Navbar() {
                       <hr className="dropdown-divider"></hr>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/advanced">
+                      <a className="dropdown-item" href="/courses/advanced">
                         Advanced
                       </a>
                     </li>
