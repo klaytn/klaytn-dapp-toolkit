@@ -12,6 +12,9 @@ import PaidCourses from "./Individual_Courses_Pages/PaidCourses";
 import AdvanceCourses from "./Individual_Courses_Pages/AdvancedCourses";
 import Footer from "./Footer/Footer";
 import Transactions from "./transaction";
+import Bootcamp from "./bootcamp/bootcamp";
+import Frontend from "./bootcamp/frontend";
+import Solidity from "./bootcamp/solidity";
 
 function App() {
   const [balance, setBalance] = useState(null);
@@ -59,7 +62,6 @@ function App() {
                   handleCourseId={handleSetCourseId}
                   klayBalance={balance}
                 />
-                <Footer />
               </>
             }
           />
@@ -68,7 +70,6 @@ function App() {
             element={
               <>
                 <CoursePage courseId={courseId} />
-                <Footer />
               </>
             }
           />
@@ -77,7 +78,6 @@ function App() {
             element={
               <>
                 <FreeCourses handleCourseId={handleSetCourseId} />
-                <Footer />
               </>
             }
           />
@@ -89,20 +89,43 @@ function App() {
                   handleCourseId={handleSetCourseId}
                   klayBalance={balance}
                 />
-                <Footer />
               </>
             }
           />
           <Route
-            path="/advance"
+            path="/advanced"
             element={
               <>
                 <AdvanceCourses handleCourseId={handleSetCourseId} />
-                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/bootcamp"
+            element={
+              <>
+                <Bootcamp />
+              </>
+            }
+          />
+          <Route
+            path="/bootcamp/frontend"
+            element={
+              <>
+                <Frontend />
+              </>
+            }
+          />
+          <Route
+            path="/bootcamp/solidity"
+            element={
+              <>
+                <Solidity />
               </>
             }
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
