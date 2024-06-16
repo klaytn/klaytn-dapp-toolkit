@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const [searchKeyword, setSearchKeyword] = useState("");
+  const [isRootPath, setIsRootPath] = useState(true)
 
   let screenWidth =
     window.innerWidth ||
@@ -18,6 +19,8 @@ export default function Navbar() {
       window.innerHeight ||
       document.documentElement.clientHeight ||
       document.body.clientHeight;
+
+    setIsRootPath(window.location.pathname === "/")
 
     window.addEventListener("scroll", () => {
       let scrollTopPosition =
@@ -61,7 +64,7 @@ export default function Navbar() {
       <div className="navContainer">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/#">
+            <a className="navbar-brand" href="/">
               K-Edu
             </a>
             <button
@@ -81,7 +84,7 @@ export default function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
@@ -115,11 +118,70 @@ export default function Navbar() {
                       <hr className="dropdown-divider"></hr>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/advance">
+                      <a className="dropdown-item" href="/advanced">
                         Advanced
                       </a>
                     </li>
+                    <li>
+                      <hr className="dropdown-divider"></hr>
+                    </li>
                   </ul>
+                </li>
+                <li className="nav-item dropdown">
+                  {!isRootPath ? (
+                    <div>
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="/bootcamp"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        BootCamp
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a
+                            className="dropdown-item"
+                            href="/bootcamp"
+                          >
+                            Bootcamp
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider"></hr>
+                        </li>
+                        <li>
+                          <a
+                            className="dropdown-item"
+                            href="/bootcamp/solidity"
+                          >
+                            Solidity
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider"></hr>
+                        </li>
+                        <li>
+                          <a
+                            className="dropdown-item"
+                            href="/bootcamp/frontend"
+                          >
+                            Frontend
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : (
+                    <a
+                      className="nav-link"
+                      href="/bootcamp"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Bootcamp
+                    </a>
+                  )}
                 </li>
               </ul>
               <form className="d-flex" role="search">
