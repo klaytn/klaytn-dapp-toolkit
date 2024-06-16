@@ -6,7 +6,6 @@ import Advanced from "./solidity/advanced";
 import Contracts from "./solidity/contracts";
 import Practice from "./solidity/practice";
 import FinalTest from "./solidity/finalTest";
-import Footer from "../Footer/Footer";
 import "./bootcamp.css";
 import { useState } from "react";
 
