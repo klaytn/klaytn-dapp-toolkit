@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 237, 237);
+}
+
+.container header {
+  margin: 0;
+  border: none;
+}
+
+.container header h1 {
+  margin: 0;
+}
+
+.container header hr {
+  margin-block: 0 10px;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section hr {
+  margin-block: 5px 15px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section a {
+  color: rgb(155, 9, 29);
+  text-decoration: none;
+  font-weight: 700;
+  word-break: break-all;
+}
+
+.attribution a {
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: rgb(238, 78, 39);
+  cursor: pointer;
+}
+
+section ul li {
+  list-style-type: disc;
+}
+
+/* Styling for the frontend section */
+/* .frontendContainer {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.content .aside {
+  border: 2px solid rgb(238, 78, 39);
+  border-radius: 15px;
+  padding: 15px 15px 0;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.content .aside:hover {
+  border-color: rgb(155, 9, 29);
+}
+
+.aside h5 {
+  color: rgb(155, 9, 29);
+  font-weight: 600;
+}
+
+.aside ul {
+  list-style-type: circle;
+}
+
+aside ul li {
+  color: rgb(155, 9, 29);
+  transition: color cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+aside ul li a {
+    color: rgb(155, 9, 29);
+  transition: color cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+}
+
+aside li:hover, aside a:hover {
+  color: rgb(238, 78, 39);
+  cursor: pointer;
+}
+
+.aside ul p {
+  color: rgb(155, 9, 29);
+  text-decoration: none;
+  transition: color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.aside ul p:hover {
+  color: rgb(238, 78, 39);
+  cursor: pointer;
+}
+
+.resources section {
+  display: block;
+}
+
+.resources section h1 {
+    margin-bottom: 15px;
+}
+
+.resources section .subSection {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.resources section .subSection pre {
+    background-color: rgba(202, 196, 196, 0.4);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.resources section h6 {
+  font-weight: bold;
+}
+
+.subSection_content {
+    margin-bottom: 30px;
+}
+
+.subSection_content p, ul, ol {
+    line-height: 1.9;
+}
+
+.subSection_content .highlight {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(238, 78, 39);
+    color: white;
+}
+
+@media (min-width: 720px) {
+  .frontendContainer {
+    gap: 25px;
+  }
+  .container header h1 {
+    margin: 10px;
+  }
+  .content {
+    flex-direction: row;
+  }
+  .content .aside {
+    width: 100%;
+    flex-shrink: 2;
+  }
+  .content .resources {
+    width: 100%;
+    flex-grow: 2;
+  }
+}
