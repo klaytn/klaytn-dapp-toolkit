@@ -1,0 +1,10 @@
+{
+  "address": "0x1D305113917d98Adb5bbcC948e823BD6D8f4464d",
+  "args": [
+    "0xDa4346FD3345b485FF6d2ebeE236aF565eB11065",
+    {
+      "type": "BigNumber",
+      "hex": "0x1bc16d674ec80000"
+    }
+  ]
+}
